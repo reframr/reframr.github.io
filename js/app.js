@@ -2,7 +2,7 @@ var userData = {};
 
 window.addEventListener('load', (event) => {
   if (!userSession.isUserSignedIn()) {
-    alert('Error: user is not signed in');
+    location.href = '/';
   }
 
   userData = userSession.loadUserData();
