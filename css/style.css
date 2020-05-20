@@ -3,7 +3,7 @@
 }
 
 button {
-	font-size: 2.5vw;
+  padding: 1rem;
   padding-left: 2.5rem;
 	padding-right: 2.5rem;
 	padding-top: 1rem;
@@ -13,46 +13,21 @@ button {
 	color: #ffffff;
 	border: none;
 }
-
 #title {
 	font-size: 10vw;
 	text-align: left;
 	padding-left: 2rem;
 }
-
 #sign-in-button {
 	text-align: right;
 	padding-right: 2rem;
 }
-
 #sign-out-button {
 	text-align: right;
 	padding-right: 2rem;
 }
-
-#homepage-middle {
-	text-align: center;
-}
-
-#homepage-middle-title {
-	font-size: 5rem;
-}
-
-#homepage-middle-paragraph {
-	font-size: 1rem;
-}
-
-a {
-	text-decoration: none;
-	color: #777777;
-}
-
-a:hover {
-	color: #e0e0e0;
-}
-
 #middle-page-centered {
-	position: absolute;
+	text-align: center;
   margin: auto;
   top: 0;
   right: 0;
@@ -60,9 +35,18 @@ a:hover {
   left: 0;
 }
 
-.footer {
-	text-align: center;
-	position: fixed;
-  bottom: 1rem;
-  width: 100%;
+#homepage-middle {
+	padding-left: 33%;
+	padding-right: 33%;
+	margin: 0;
+  position: absolute;
+  top: 40%;
+}
+
+#homepage-middle-title {
+	font-size: 7.5vw;
+}
+
+#homepage-middle-paragraph {
+	font-size: 2.5vw;
 }
