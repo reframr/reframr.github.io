@@ -2,8 +2,8 @@
   "name": "reframr",
   "description": "dynamic videos",
   "icons": [{
-    "src": "https://purejs.dece.app/img/dece-logo.png",
-    "sizes": "192x192",
+    "src": "/img/reframr.png",
+    "sizes": "500x500",
     "type": "image/png"
   }]
 }
