@@ -50,3 +50,10 @@ button {
 #homepage-middle-paragraph {
 	font-size: 2.5vw;
 }
+
+.footer {
+	text-align: center;
+	position: fixed;
+  bottom: 1rem;
+  width: 100%;
+}
