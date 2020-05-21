@@ -6,6 +6,6 @@ window.addEventListener('load', (event) => {
   }
 
   userData = userSession.loadUserData();
-	x = JSON.stringify(userData, '\t', 2);
-  document.getElementById('user-name').innerHTML = x.name;
+	userJSON = userData.toJSON();
+	document.getElementById('user-name').innerHTML = userJSON.name;
 });
