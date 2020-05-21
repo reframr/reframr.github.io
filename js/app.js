@@ -6,6 +6,12 @@ window.addEventListener('load', (event) => {
   }
 
   userData = userSession.loadUserData();
-	userJSON = userData.toJSON();
+
+	for (var i = 0; i < userData.length; i++){
+		if (obj[i] == name){
+			 x = obj[i].name;
+		}
+	}
+
 	document.getElementById('user-name').innerHTML = userJSON.name;
 });
