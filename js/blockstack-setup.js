@@ -12,5 +12,5 @@ var userSession = new blockstack.UserSession({
 
 function signOut() {
   // We pass url to redirect after signing out
-  blockstack.signUserOut('index.html');
+  blockstack.signUserOut('/');
 }
