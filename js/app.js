@@ -8,10 +8,10 @@ window.addEventListener('load', (event) => {
   userData = userSession.loadUserData();
 
 	for (var i = 0; i < userData.length; i++){
-		if (obj[i] == name){
+		if (obj[i] == 'name'){
 			 x = obj[i].name;
 		}
 	}
 
-	document.getElementById('user-name').innerHTML = userJSON.name;
+	document.getElementById('user-name').innerHTML = x;
 });
