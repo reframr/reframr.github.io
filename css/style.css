@@ -53,12 +53,24 @@ a:hover {
   top: 40%;
 }
 
-#homepage-middle-title {
-	font-size: 7.5vw;
+@media screen and (max-width: 1000px) {
+	#homepage-middle-title {
+		font-size: 2.5em;
+	}
+
+	#homepage-middle-paragraph {
+		font-size: 1em;
+	}
 }
 
-#homepage-middle-paragraph {
-	font-size: 2.5vw;
+@media screen and (min-width: 1000px) {
+	#homepage-middle-title {
+		font-size: 5em;
+	}
+
+	#homepage-middle-paragraph {
+		font-size: 2em;
+	}
 }
 
 .footer {
