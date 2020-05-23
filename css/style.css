@@ -79,3 +79,11 @@ a:hover {
   bottom: 1rem;
   width: 100%;
 }
+
+#username{
+	text-align: right;
+	font-size: 2em;
+	color: inherit;
+	padding-right: 0.5rem;
+	padding-top: 0.5rem;
+}

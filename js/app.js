@@ -7,5 +7,5 @@ window.addEventListener('load', (event) => {
 
   userData = userSession.loadUserData();
 
-	document.getElementById('user-name').innerHTML = userData.username;
+	document.getElementById('username').innerHTML = userData.username;
 });
