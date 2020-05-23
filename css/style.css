@@ -14,6 +14,10 @@ button {
 	border: none;
 }
 
+#profile-link {
+	color: #000000;
+}
+
 a {
 	text-decoration: none;
 	color: #777777;
@@ -24,7 +28,7 @@ a:hover {
 }
 
 #title {
-	font-size: 10vw;
+	font-size: 5rem;
 	text-align: left;
 	padding-left: 2rem;
 }
@@ -53,17 +57,17 @@ a:hover {
   top: 40%;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) /* mobile */ {
 	#homepage-middle-title {
-		font-size: 2.5em;
+		font-size: 3.5rem;
 	}
 
 	#homepage-middle-paragraph {
-		font-size: 1em;
+		font-size: 1rem;
 	}
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) /* desktop */ {
 	#homepage-middle-title {
 		font-size: 5em;
 	}
@@ -80,10 +84,32 @@ a:hover {
   width: 100%;
 }
 
+#below-navbar {
+	font-size: 1rem;
+	text-align: right;
+}
+
+#username-holder {
+	padding-right: 2rem;
+}
+
 #username{
 	text-align: right;
 	font-size: 2em;
 	color: inherit;
-	padding-right: 0.5rem;
-	padding-top: 0.5rem;
+}
+
+#below-navbar-profile {
+	font-size: 1rem;
+	text-align: center;
+}
+
+#username-holder-profile {
+	padding-right: 2rem;
+}
+
+#username-profile {
+	text-align: right;
+	font-size: 4em;
+	color: #777777;
 }
