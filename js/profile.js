@@ -10,3 +10,13 @@ window.addEventListener('load', (event) => {
 
 	document.getElementById('username-profile').innerHTML = userData.username;
 });
+
+filename = document.getElementById("filename");
+
+let options = {
+  encrypt: false
+}
+
+function uploadFile() {
+	userSession.putFile(filename, HTMLInputElement.files, options);
+}
