@@ -3,18 +3,18 @@
 }
 
 button {
-  padding: 1rem;
-  padding-left: 2.5rem;
-	padding-right: 2.5rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
 	border-radius: 20px;
 	background-color: #000000;
 	color: #ffffff;
 	border: none;
 }
 
+#title-link {
+	color: #000000;
+}
+
 #profile-link {
+	font-size: 2.5vw;
 	color: #000000;
 }
 
@@ -27,89 +27,194 @@ a:hover {
 	color: #e0e0e0;
 }
 
-#title {
-	font-size: 5rem;
-	text-align: left;
-	padding-left: 2rem;
-}
-#sign-in-button {
-	text-align: right;
-	padding-right: 2rem;
-}
-#sign-out-button {
-	text-align: right;
-	padding-right: 2rem;
-}
-#middle-page-centered {
-	text-align: center;
-  margin: auto;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
+@media only screen and (max-width: 850px) {
 
-#homepage-middle {
-	padding-left: 33%;
-	padding-right: 33%;
-	margin: 0;
-  position: absolute;
-  top: 40%;
-}
+	button {
+		padding: 5vw;
+		padding-left: 10vw;
+		padding-right: 10vw;
+		padding-top: 2.5vw;
+		padding-bottom: 2.5vw;
+	}
 
-@media screen and (max-width: 1000px) /* mobile */ {
+	#title {
+		font-size: 15vw;
+		text-align: left;
+		padding-left: 2rem;
+	}
+	#sign-in-button {
+		text-align: right;
+		padding-right: 2rem;
+	}
+	#sign-out-button {
+		text-align: right;
+		padding-right: 2rem;
+	}
+
+	#sign-in-button-text {
+		font-size: 3.5vw;
+	}
+
+	#sign-out-button-text {
+		font-size: 3.5vw;
+	}
+
+	#middle-page-centered {
+		text-align: center;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#homepage-middle {
+		padding-left: 33%;
+		padding-right: 33%;
+		margin: 0;
+		position: absolute;
+		top: 40%;
+	}
+
 	#homepage-middle-title {
-		font-size: 3.5rem;
+		font-size: 10vw;
 	}
 
 	#homepage-middle-paragraph {
+		font-size: 5vw;
+	}
+
+	.footer {
+		text-align: center;
+		position: fixed;
+		bottom: 1rem;
+		width: 100%;
+	}
+
+	#below-navbar {
+		font-size: 1rem;
+		text-align: right;
+	}
+
+	#username-holder {
+		font-size: 2.5vw;
+		padding-right: 2rem;
+	}
+
+	#username{
+		text-align: right;
+		font-size: 2vw;
+		color: inherit;
+	}
+
+	#below-navbar-profile {
+		font-size: 2vw;
+		text-align: center;
+	}
+
+	#username-holder-profile {
+		font-size: 2.5vw;
+		padding-right: 2rem;
+	}
+
+	#username-profile {
+		text-align: right;
+		font-size: 2vw;
+		color: #777777;
+	}
+}
+
+@media only screen and (min-width: 850px) {
+
+	button {
+		padding: 2rem;
+  	padding-left: 2rem;
+		padding-right: 2rem;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+	}
+
+	#title {
+		font-size: 5vw;
+		text-align: left;
+		padding-left: 2rem;
+	}
+	#sign-in-button {
+		text-align: right;
+		padding-right: 2rem;
+	}
+	#sign-out-button {
+		text-align: right;
+		padding-right: 2rem;
+	}
+
+	#sign-in-button-text {
 		font-size: 1rem;
 	}
-}
 
-@media screen and (min-width: 1000px) /* desktop */ {
+	#sign-out-button-text {
+		font-size: 1rem;
+	}
+
+	#middle-page-centered {
+		text-align: center;
+		margin: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+	}
+
+	#homepage-middle {
+		padding-left: 33%;
+		padding-right: 33%;
+		margin: 0;
+		position: absolute;
+		top: 40%;
+	}
+
 	#homepage-middle-title {
-		font-size: 5em;
+		font-size: 3rem;
 	}
 
 	#homepage-middle-paragraph {
-		font-size: 2em;
+		font-size: 1.5rem;
 	}
-}
 
-.footer {
-	text-align: center;
-	position: fixed;
-  bottom: 1rem;
-  width: 100%;
-}
+	.footer {
+		text-align: center;
+		position: fixed;
+		bottom: 1rem;
+		width: 100%;
+	}
 
-#below-navbar {
-	font-size: 1rem;
-	text-align: right;
-}
+	#below-navbar {
+		font-size: 1rem;
+		text-align: right;
+	}
 
-#username-holder {
-	padding-right: 2rem;
-}
+	#username-holder {
+		padding-right: 2rem;
+	}
 
-#username{
-	text-align: right;
-	font-size: 2em;
-	color: inherit;
-}
+	#username{
+		text-align: right;
+		font-size: 2.5rem;
+		color: inherit;
+	}
 
-#below-navbar-profile {
-	font-size: 1rem;
-	text-align: center;
-}
+	#below-navbar-profile {
+		font-size: 1rem;
+		text-align: center;
+	}
 
-#username-holder-profile {
-	padding-right: 2rem;
-}
+	#username-holder-profile {
+		padding-right: 2rem;
+	}
 
-#username-profile {
-	text-align: right;
-	font-size: 4em;
-	color: #777777;
+	#username-profile {
+		text-align: right;
+		font-size: 3.5rem;
+		color: #777777;
+	}
 }
