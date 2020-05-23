@@ -38,13 +38,56 @@
 			<div class="edge-two"></div>
 		</div>
 
-		<div class="middle" id="upload-video">
+		<div class="middle">
 			<div class="edge-one"></div>
-			<div class="middle-content" id="upload-video">
+			<div class="middle-content" id="account-name">
 				<span id="username-profile"></span>
 			</div>
 			<div class="edge-two"></div>
 		</div>
+
+	<br>
+	<br>
+
+		<div class="middle" id="upload-video">
+			<div class="edge-one"></div>
+			<div class="middle-content" id="upload-video">
+				<form onsubmit="saveFileToGaia(); return false">
+					<input type="file" id="content"/>
+					<br />
+					filename: <input
+						type="text"
+						id="filename"
+						name="filename"
+						placeholder="Type filename here"
+						value="video.mp4"
+					/>
+					<br />
+					access: <select id="access">
+						<option selected>Public</option>
+						<option>Private</option>
+					</select>
+					<br />
+					<input type="submit" value="Save file" />
+				</form>
+			</div>
+			<div class="edge-two"></div>
+		</div>
+
+	<br>
+	<br>
+
+	<div class="middle">
+		<div class="edge-one"></div>
+			<div class="middle-content" id="videos">
+				<form onsubmit="getFileFromGaia(); return false">
+        	<input type="submit" value="Get file content" />
+      	</form>
+
+      <pre id="file-content"></pre>
+			</div>
+		<div class="edge-two"></div>
+	</div>
 
 </body>
 </html>

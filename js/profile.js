@@ -10,7 +10,3 @@ window.addEventListener('load', (event) => {
 
 	document.getElementById('username-profile').innerHTML = userData.username;
 });
-
-function uploadFile(){
-	userSession.putFile();
-}
