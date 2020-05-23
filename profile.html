@@ -52,7 +52,7 @@
 		<div class="middle" id="upload-video">
 			<div class="edge-one"></div>
 			<div class="middle-content" id="upload-video">
-				<form onsubmit="uploadFile(); return false">
+				<form>
 					<input type="file" id="content" ACCEPT="video/mp4"/>
 					<br />
 					filename: <input
@@ -68,7 +68,7 @@
 						<option>Private</option>
 					</select>
 					<br />
-					<input type="submit" value="Save file" />
+					<input type="submit" value="Save file" onclick="uploadFile(); return false"/>
 				</form>
 			</div>
 			<div class="edge-two"></div>
