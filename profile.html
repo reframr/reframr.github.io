@@ -52,15 +52,15 @@
 		<div class="middle" id="upload-video">
 			<div class="edge-one"></div>
 			<div class="middle-content" id="upload-video">
-				<form>
-					<input type="file" id="content" ACCEPT="video/mp4"/>
+				<form onsubmit="saveFileToGaia(); return false">
+					<textarea rows="4" cols="50" id="content">Example file content. You can change it. Bla bla bla.</textarea>
 					<br />
 					filename: <input
 						type="text"
 						id="filename"
 						name="filename"
 						placeholder="Type filename here"
-						value="video.mp4"
+						value="example.txt"
 					/>
 					<br />
 					access: <select id="access">
@@ -68,7 +68,7 @@
 						<option>Private</option>
 					</select>
 					<br />
-					<input type="submit" value="Save file" onclick="uploadFile(); return false"/>
+					<input type="submit" value="Save file" />
 				</form>
 			</div>
 			<div class="edge-two"></div>
@@ -84,7 +84,7 @@
 					Get URLs
 				</button>
 
-      <pre id="file-content"></pre>
+      <pre id="files-list-with-urls"></pre>
 			</div>
 		<div class="edge-two"></div>
 	</div>
