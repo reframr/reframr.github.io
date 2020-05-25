@@ -2,8 +2,8 @@
   "name": "reframr",
   "description": "dynamic videos",
   "icons": [{
-    "src": "/img/reframr.png",
-    "sizes": "500x500",
+    "src": "/reframrfavicons/android-chrome.png",
+    "sizes": "512x512",
     "type": "image/png"
   }]
 }
