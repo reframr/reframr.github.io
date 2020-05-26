@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  text-align: center;
+  height: 100vh;
+}
+.button {
+  max-width: 8em;
+  max-height: 4em;
+  font-size: 1em;
+  margin: auto;
+  display: inline-block;
+  padding: 1em;
+  color: #000;
+  transition: color 0.3s linear;
+  border-color: #000;
+  border-width: 2px;
+}
+.button:hover {
+  color: white;
+  border: 1px solid white;
+  background-color: black;
+}
