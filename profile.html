@@ -15,18 +15,6 @@
   	<script src="js/profile.js"></script>
 	<script src="js/gaia.js"></script>
 
-	<!-- include jQuery library -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
-
-	<!-- include FilePond library -->
-	<script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
-
-	<!-- include FilePond plugins -->
-	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
-
-	<!-- include FilePond jQuery adapter -->
-	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
-
 	<link href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
 </head>
 
@@ -68,11 +56,14 @@
 	<div class="middle">
 		<div class="edge-one"></div>
 		<div class="middle-content">
-			<input type="file">
+			<input type="file" class="filepond">
 
+			<!-- Load FilePond library -->
+			<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+			<!-- Turn all file input elements into ponds -->
 			<script>
-			const inputElement = document.querySelector('input[type="file"]');
-			const pond = FilePond.create( inputElement );
+			FilePond.parse(document.body);
 			</script>
 		</div>
 		<div class="edge-two"></div>
