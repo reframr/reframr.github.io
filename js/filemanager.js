@@ -1,24 +1,22 @@
 $(function(){
-
-    // Turn input element into a pond
-    $('.my-pond').filepond();
-
-    // Turn input element into a pond with configuration options
-    $('.my-pond').filepond({
-        allowMultiple: true
-    });
-
-    // Set allowMultiple property to true
-    $('.my-pond').filepond('allowMultiple', false);
   
-    // Listen for addfile event
-    $('.my-pond').on('FilePond:addfile', function(e) {
-        console.log('file added event', e);
-    });
+  // First register any plugins
+  $.fn.filepond.registerPlugin(FilePondPluginImagePreview);
 
-    // Manually add a file using the addfile method
-    $('.my-pond').filepond('addFile', 'index.html').then(function(file){
-      console.log('file added', file);
-    });
-  
+  // Turn input element into a pond
+  $('.my-pond').filepond();
+
+  // Set allowMultiple property to true
+  $('.my-pond').filepond('allowMultiple', true);
+
+  // Listen for addfile event
+  $('.my-pond').on('FilePond:addfile', function(e) {
+      console.log('file added event', e);
   });
+
+  // Manually add a file using the addfile method
+  $('.my-pond').first().filepond('addFile', 'index.html').then(function(file){
+    console.log('file added', file);
+  });
+
+});
