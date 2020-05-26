@@ -1,5 +1,6 @@
 * {
 	font-family: 'DM Sans', sans-serif;
+	overflow-x: hidden;
 }
 
 button {
@@ -27,7 +28,7 @@ a:hover {
 	color: #e0e0e0;
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 600px) {
 
 	button {
 		padding: 5vw;
@@ -38,7 +39,7 @@ a:hover {
 	}
 
 	#title {
-		font-size: 15vw;
+		font-size: 2.5rem;
 		text-align: left;
 		padding-left: 2rem;
 	}
@@ -62,10 +63,6 @@ a:hover {
 	#middle-page-centered {
 		text-align: center;
 		margin: auto;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
 	}
 
 	#homepage-middle {
@@ -124,7 +121,7 @@ a:hover {
 	}
 }
 
-@media only screen and (min-width: 850px) {
+@media only screen and (min-width: 600px) {
 
 	button {
 		padding: 2rem;
