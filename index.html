@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>reframr</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/gh/jetavators/airframe@master/airframe.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+	<script src="https://unpkg.com/blockstack@19.4.0-beta.1/dist/blockstack.js" integrity="sha384-UnkhaTA3XqTl/a79lTWO+C85bbXyM8IIUYtSLfrkkNQJcCxocVZv8nHaMzrvS9ZH" crossorigin="anonymous"></script>
+  <script src="js/blockstack-setup.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+	<div class="navbar">
+		<div class="two">
+			<div class="two-one" id="title">
+				<a href="/" id="title-link"><span>reframr</span></a>
+			</div>
+			<div class="two-two" id="sign-in-button">
+				<button type="button" onclick="signIn()" id="sign-in-button-text">
+					Sign in
+				</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="middle" id="middle-page-centered">
+		<div class="edge-one"></div>
+		<div class="middle-content" id="homepage-middle">
+			<span id="homepage-middle-title">dynamic videos</span>
+			<br>
+			<span id="homepage-middle-paragraph">
+				reframr is built on <a href="https://blockstack.org">Blockstack</a>, a blockchain service.
+			</span>
+		</div>
+		<div class="edge-two"></div>
+	</div>
+
+</body>
+</html>
